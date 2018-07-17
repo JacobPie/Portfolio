@@ -1,0 +1,213 @@
+/* Whole Page */
+
+body {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+p {
+  font-family: 'Bitter', sans;
+}
+
+/* Nav */
+
+nav {
+  display: block;
+  position: fixed;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 10vh;
+  border-bottom: solid white 1px;
+  z-index: 9999;
+}
+
+.btns {
+  display: inline-block;
+  float: right;
+  margin-top: -3.25%;
+  font-family: sans-serif;
+  width: 30vw;
+}
+
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  display: inline-block;
+  float: right;
+  margin-right: 1%;
+  margin-left: 1%;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#logo {
+  margin-left: 3.5%;
+  text-align: left;
+}
+
+/* Welcome Section */
+
+#welcome-section {
+  background-image: url(https://www.walldevil.com/wallpapers/a51/2755-city-cityscape-wallpaper-architecture-wallpapers-albums-skylines.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 99.5vh;
+  border-bottom: black 3px solid;
+  z-index: 1;
+  transform-style: inherit;
+}
+
+h1,
+#welcome-section p {
+  width: 50%;
+  color: white;
+  text-align: left;
+  margin: auto;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 60px;
+  padding-top: 25vh;
+  font-family: sans-serif;
+}
+
+#welcome-section p {
+  font-size: 27px;
+  font-family: serif;
+}
+
+/* Portfolio */
+#projects {
+  border-bottom: solid 2px #333;
+  z-index: 2;
+}
+
+.row {
+  width: 100vw;
+  margin-left: 0;
+  display: block;
+  height: auto;
+}
+
+#projects-h2, #contact-h2 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.flip-card {
+  margin: auto;
+  display: inline-block;
+  perspective: 50vw;
+  width: 50vw;
+  height: 50vh;
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+  .flip-card {
+    width: 31%;
+    margin: 1.16%;
+  }
+}
+
+@media (min-width: 992px) {
+  .flip-card {
+    width: 23%;
+    margin: 1%;
+  }
+}
+
+.flip-card .front,
+.flip-card .back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-size: cover;
+  transition: 0.3s;
+  backface-visibility: hidden;
+  /* Change Colors! */
+  border: solid 1px #333;
+  box-shadow: 5px 10px 8px #333;
+  border-radius: 5%;
+}
+
+.flip-card:hover .front {
+  transform: rotateY(180deg) scale(0.5);
+}
+
+.flip-card .back {
+  /* Change Colors! */
+  background: #333;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: rotateY(180deg) scale(0.5);
+}
+
+.flip-card:hover .back {
+  transform: rotateY(360deg) scale(1);
+}
+
+.flip-card .front {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-header {
+  margin-top: 1%;
+}
+
+.card-desc, .languages {
+  text-align: left;
+  margin-left: 2px;
+}
+
+strong {
+  color: #E6E6E6;
+  font-weight: 700;
+}
+
+/* Contact */
+#contact {
+  height: auto;
+  text-decoration: none;
+  z-index: 2;
+}
+
+#contact-h2 {
+  text-decoration: none;
+}
+
+.contact-a {
+  width: 10vw;
+  height: 20%;
+  margin: 3% 2% 2% 2%;
+}
+
+.contact-a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+#contact-p {
+  font-size: 26px;
+}
+
+/* Footer */
+footer {
+  border-top: solid #333 2px;
+  text-align: left;
+  z-index: 2;
+}
