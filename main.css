@@ -7,7 +7,9 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -56,7 +58,7 @@ button {
 /* Welcome Section */
 
 #welcome-section {
-  background-image: url(https://www.walldevil.com/wallpapers/a51/2755-city-cityscape-wallpaper-architecture-wallpapers-albums-skylines.jpg);
+  background-image: url(https://i.pinimg.com/originals/9f/d7/b8/9fd7b8a509136c85ac0a3e6c8e830ab2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 99.5vh;
@@ -86,6 +88,7 @@ h1 {
 }
 
 /* Portfolio */
+
 #projects {
   border-bottom: solid 2px #333;
   z-index: 2;
@@ -98,7 +101,8 @@ h1 {
   height: auto;
 }
 
-#projects-h2, #contact-h2 {
+#projects-h2,
+#contact-h2 {
   font-size: 30px;
   text-decoration: underline;
 }
@@ -169,7 +173,8 @@ h1 {
   margin-top: 1%;
 }
 
-.card-desc, .languages {
+.card-desc,
+.languages {
   text-align: left;
   margin-left: 2px;
 }
@@ -180,6 +185,7 @@ strong {
 }
 
 /* Contact */
+
 #contact {
   height: auto;
   text-decoration: none;
@@ -206,6 +212,7 @@ strong {
 }
 
 /* Footer */
+
 footer {
   border-top: solid #333 2px;
   text-align: left;
